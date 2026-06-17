@@ -1,0 +1,50 @@
+# negocio.perguntas — Imobiliária (esquadrão: captar -> qualificar -> agendar visita).
+
+[campo]
+placeholder = NOME_NEGOCIO
+valida = valida_nao_vazio
+texto = Qual o nome da sua imobiliária?
+
+[campo]
+placeholder = O_QUE_VENDE
+valida = valida_nao_vazio
+texto = O que você trabalha? (ex.: "venda e locação de apartamentos e casas na zona sul")
+
+[campo]
+placeholder = CLIENTE_IDEAL
+valida = valida_nao_vazio
+texto = Quem é seu cliente ideal? (ex.: "famílias comprando o 1º imóvel", "investidores")
+
+[campo]
+placeholder = FAIXA_PRECO
+opcional = sim
+default = (varia por imóvel)
+texto = Faixa dos imóveis que você trabalha? (ex.: "de R$ 300 mil a R$ 1,2 mi; aluguel de R$ 1.500 a R$ 5 mil") — Enter pula
+
+[campo]
+placeholder = INSTAGRAM_HANDLE
+tipo = instagram
+texto = Qual o @ do Instagram da imobiliária? (ex.: @minhaimobiliaria)
+
+[menu]
+placeholder = TOM_DE_VOZ_DESCRICAO
+titulo = Como você gosta de falar com o cliente?
+texto = Escolha (1 a N):
+opcao = Consultivo e confiável | Fale de forma consultiva e confiável: educado, seguro, ajudando a pessoa a decidir sem pressionar.
+opcao = Próximo e prestativo | Fale de forma próxima e prestativa, acessível, como um corretor amigo de confiança.
+opcao = Sóbrio e profissional | Fale de forma sóbria e profissional, transmitindo seriedade e autoridade no mercado.
+outro = sim
+
+[campo]
+placeholder = RESTRICOES
+opcional = sim
+default = Nunca prometer aprovação de financiamento, dar consultoria jurídica/tributária, nem garantir valorização; agendar visita só confirmando com o corretor.
+texto = Tem algo que o agente NUNCA deve fazer ou prometer? (ex.: "nunca garantir aprovação de financiamento") — Enter pula
+
+[menu]
+placeholder = REGRA_PRECO
+titulo = Quando alguém pergunta o preço de um imóvel ou quer visitar, o que o agente deve fazer?
+texto = Escolha (1 a N):
+opcao = Qualificar e agendar visita | Informe o que puder do imóvel, faça as perguntas de qualificação (orçamento, região, comprar ou alugar, prazo) e convide a agendar uma visita; avise o corretor no Telegram.
+opcao = Só qualificar e chamar no WhatsApp | Não trate detalhes no comentário; faça a qualificação e leve a conversa para o Direct ou WhatsApp do corretor.
+opcao = Avisar o corretor antes | Não passe valores nem agende sozinho: avise o corretor no Telegram com o resumo e aguarde.
